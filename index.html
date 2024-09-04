@@ -17,22 +17,45 @@
     <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
 
 
-
-    <header class="container">
-
-    </header>
+    <div id="app">
 
 
+        <header class="container">
+            <div class="row text-center justify-content-center">
+                <div class="col-12">
+
+                    <h1 class="fw-bold py-5">Carosello in Vue</h1>
+
+                </div>
+            </div>
+        </header>
+
+
+        <main class="container">
+            <div class="row py-5 justify-content-around g-2 gap-5">
+                <div class="card col" v-for="(image,index) in imageList">
+                    <img :src="image" class="card-body">
+                    <h5>Card title : IMage {{index + 1}}</h5>
+
+                    <p class="card-text"> some quick esample text to buikd on the card title and make
+                        up the bulk of the card'
+                    </p>
+
+                    <a href="#" class=" btn btn-primary">Go somwhere </a>
+
+                </div>
+            </div>
+        </main>
 
 
 
 
-    <main class="container">
-        <div class="row oy-5 justify-content-around g-2 gap-"></div>
+
+
+    </div>
 
 
 
-    </main>
 
 
 
